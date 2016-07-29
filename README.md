@@ -1,2 +1,2 @@
 # GeneralLib
-Just a generally used methods for my plugins
+Just generally used methods for my plugins

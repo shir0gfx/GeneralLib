@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class PossibilityCalculator {
 /*	public static void main(String[] ar){
-		double possibility = getReciprocalPossibility(0, 3);
+		double possibility = getReciprocalPossibility(0, 1);
 		System.out.println("getReciprocalPossibility(0, "+3+") : "+possibility);
 		
 		for(int x = 0; x < 5; x++){
@@ -26,13 +26,13 @@ public class PossibilityCalculator {
 	 * 1/(2(level - vert))
 	 * 
 	 * @param level
-	 * @return 1.0 if x - vert <= 0; 1/(2(level - vert)) otherwise
+	 * @return 1.0 if x - vert <= 0; 1/(2^(level - vert)) otherwise
 	 */
 	public static double getReciprocalPossibility(int vertAsymtote, int level){
 		int base = level - vertAsymtote;
 		
 		if(base > 0){
-			return 1.0D/(2*base);
+			return 1.0D/(pow(2, base));
 		}else{
 			return 1.0D;
 		}

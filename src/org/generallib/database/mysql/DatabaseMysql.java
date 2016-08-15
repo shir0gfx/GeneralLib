@@ -45,6 +45,8 @@ public class DatabaseMysql<T> extends Database<T> {
 		ds.setCharacterEncoding("UTF-8");
 		ds.setUseUnicode(true);
 		ds.setAutoReconnectForPools(true);
+		ds.setAutoReconnect(true);
+		ds.setAutoReconnectForConnectionPools(true);
 		
 		pool = new MiniConnectionPoolManager(ds, 4);
 		

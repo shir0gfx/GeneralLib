@@ -1,5 +1,6 @@
 package org.generallib.database.tasks;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -15,6 +16,12 @@ public class DatabaseTransferTask implements Runnable {
 		super();
 		this.plugin = plugin;
 		this.pairs = pairs;
+	}
+	
+	public DatabaseTransferTask(Plugin plugin, Set<TransferPair> pairs) {
+		this.plugin = plugin;
+		this.pairs = new ArrayList<TransferPair>();
+		this.pairs.addAll(pairs);
 	}
 
 	@Override

@@ -26,7 +26,7 @@ public class ParsableCalculator {
 
 	}
 	
-	private static final Map<Character, Operation> operations = new HashMap<Character, Operation>(){{
+	public static final Map<Character, Operation> operations = new HashMap<Character, Operation>(){{
 		put('+', new Operation() {@Override public double calc(double num1, double num2) {return num1 + num2;}});
 		put('-', new Operation() {@Override public double calc(double num1, double num2) {return num1 - num2;}});
 		put('*', new Operation() {@Override public double calc(double num1, double num2) {return num1 * num2;}});
@@ -57,6 +57,8 @@ public class ParsableCalculator {
 	 * @throws NumberFormatException throw if invalid number in the string.
 	 */
 	public double parse(String input){
+		stack.clear();
+		
 		Queue<String> output = eval(input);
 
 		while(!output.isEmpty()){

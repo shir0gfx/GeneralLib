@@ -47,6 +47,7 @@ public class DatabaseMysql<T> extends Database<T> {
 		ds.setAutoReconnectForPools(true);
 		ds.setAutoReconnect(true);
 		ds.setAutoReconnectForConnectionPools(true);
+		ds.setSocketTimeout(1000);
 		
 		pool = new MiniConnectionPoolManager(ds, 4);
 		

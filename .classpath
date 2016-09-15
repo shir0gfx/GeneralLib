@@ -4,8 +4,10 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="H:/server/main/spigot-1.8.8.jar" sourcepath="H:/server/main"/>
 	<classpathentry kind="lib" path="H:/server/main/spigot-1.9.jar"/>
-	<classpathentry kind="lib" path="H:/server/main/plugins/Vault.jar"/>
-	<classpathentry kind="lib" path="H:/server/main/plugins/ActionBarAPI.jar"/>
 	<classpathentry kind="lib" path="H:/server/main/spigot-1.10.jar"/>
+	<classpathentry kind="lib" path="H:/server/main/plugins/bak/Vault.jar"/>
+	<classpathentry kind="lib" path="H:/server/main/plugins/bak/PlaceholderAPI.jar"/>
+	<classpathentry kind="lib" path="H:/server/main/plugins/bak/Jobs.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ChatLib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
